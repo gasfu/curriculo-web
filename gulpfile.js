@@ -21,7 +21,7 @@ gulp.task('style', () => {
 	.pipe(stylus({compress: true}))
 	.pipe(mmq())
 	.pipe(minify())
-	.pipe(rename('app.min.css'))
+	.pipe(rename('application.min.css'))
 	.pipe(sourcemaps.write())
 	.pipe(gulp.dest(path.stylesheetDEST))
 });
