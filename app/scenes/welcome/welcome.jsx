@@ -6,10 +6,10 @@ class Welcome extends React.Component {
 			<section id="welcome" className="welcome">
 				<div className="presentation">
 					<h1 className="brand --inverse"></h1>
-					<p className="description">
+					<p className="description animated fadeInUp">
 						Agora você pode ter o seu curriculo online. De forma rápida, fácil e atraente.
 					</p>
-					<a href="#" className="action">Entrar</a>
+					<a href="#" className="action animated fadeInUp">Entrar</a>
 				</div>
 			</section>
 		);

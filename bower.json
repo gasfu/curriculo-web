@@ -1,0 +1,23 @@
+{
+  "name": "curriculo-web",
+  "description": "Aplicação web para gerenciamento e apresentação de curriculo",
+  "main": "gulpfile.js",
+  "authors": [
+    "Gabriel Furlan"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/gasfu/curriculo-web",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2"
+  },
+  "devDependencies": {
+    "animate.css": "^3.5.2"
+  }
+}

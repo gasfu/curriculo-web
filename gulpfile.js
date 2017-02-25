@@ -18,7 +18,7 @@ gulp.task('default', () => {
 gulp.task('style', () => {
 	return gulp.src(path.stylesheetMain)
 	.pipe(sourcemaps.init())
-	.pipe(stylus({compress: true}))
+	.pipe(stylus({compress: true, 'include css': true}))
 	.pipe(mmq())
 	.pipe(minify())
 	.pipe(rename('application.min.css'))
