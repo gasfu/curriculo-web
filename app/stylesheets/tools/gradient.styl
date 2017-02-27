@@ -1,0 +1,17 @@
+gradient() {
+	background-image $color-two
+	background-image -webkit-linear-gradient(to left, $color-two , $color-one)
+	background-image linear-gradient(to left, $color-two , $color-one)
+}
+
+gradientHover() {
+	background-image $color-two-hover
+	background-image -webkit-linear-gradient(to left, $color-two-hover , $color-one-hover)
+	background-image linear-gradient(to left, $color-two-hover , $color-one-hover)
+}
+
+gradientText(){
+	gradient()	
+	-webkit-background-clip text
+	-webkit-text-fill-color transparent
+}

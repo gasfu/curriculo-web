@@ -14,7 +14,8 @@ module.exports = {
 	devServer: {
 	    inline: true,
 	    contentBase: './public/',
-	    port: 8081
+	    port: 8081,
+	    historyApiFallback: true
 	},
 
 	module: {
