@@ -11,7 +11,7 @@ class Welcome extends React.Component {
 					<p className="description animated fadeInUp">
 						Agora você pode ter o seu curriculo online. De forma rápida, fácil e atraente.
 					</p>
-					<Link to="auth" className="action animated fadeInUp">Entrar</Link>
+					<Link to="auth" className="action animated fadeInUp">Começe</Link>
 				</div>
 			</section>
 		);

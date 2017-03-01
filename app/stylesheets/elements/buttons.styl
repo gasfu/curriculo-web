@@ -1,16 +1,25 @@
 .button 
-	
 	display inline-block
-	padding 10px 32px
-	border-style solid
-	border-width 2px
+	padding 14px 32px
 	border-radius 5px
 	font-size 1.2em	       	
 	
+	
+	&.--default
+		background-color transparent
+		color #FFFFFF
+		border solid 1px #FFFFFF	
+		&:hover 
+			color $color-one
+			background #FFFFFF
+			transition-duration .5s
+
 	&.--gradient
 		gradient()
 		color #FFFFFF 
 		
-		&:hover
-			gradientHover()
+	&.--block 
+		width 100%
+		
+		
 			
