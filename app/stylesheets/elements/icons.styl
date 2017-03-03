@@ -8,19 +8,40 @@
       url('/assets/fonts/feedback/fontello.svg?78914200#fontello') format('svg')
   font-weight normal
   font-style normal
+  
+@font-face
+	font-family 'iconsHeader'
+	src url('/assets/fonts/header/fontello.eot?88887750')
+	src url('/assets/fonts/header/fontello.eot?88887750#iefix') format('embedded-opentype'),
+	    url('/assets/fonts/header/fontello.woff2?88887750') format('woff2'),
+	    url('/assets/fonts/header/fontello.woff?88887750') format('woff'),
+	    url('/assets/fonts/header/fontello.ttf?88887750') format('truetype'),
+	    url('/assets/fonts/header/fontello.svg?88887750#fontello') format('svg')
+	font-weight normal
+	font-style normal
 
 
 .icon
-	font-family "iconsFeedback"
 	font-style normal
 	font-weight normal
 	font-size 1rem
 	
 	&.--error::before
+		font-family "iconsFeedback"
 		content '\e803'
 		
 	&.--success::before
+		font-family "iconsFeedback"
 		content '\e804'
 	
 	&.--info::before
+		font-family "iconsFeedback"
 		content '\e800'
+		
+	&.--nav::before
+		font-family "iconsHeader"
+		content "\e801"
+		
+	&.--globe::before
+		font-family "iconsHeader"
+		content "\e802"

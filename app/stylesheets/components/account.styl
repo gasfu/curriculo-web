@@ -17,8 +17,10 @@
 		width 140px
 		height 140px
 		border-radius 50%
-		background-color #FFFFFF
 		shadowLight()
+		animation fade 1.5s
+		-webkit-animation fade 1.5s
+		margin-top 45px
 		
 	> .name
 	> .email
@@ -31,3 +33,53 @@
 	
 	> .email
 		font-size 0.9rem
+		
+	> .nav 
+		position absolute
+		top 0
+		width 100%
+		padding 15px
+		display flex
+		display -webkit-flex
+		justify-content space-between
+		-webkit-justify-content space-between
+	
+.nav 
+	> .brand::before
+	> .icon.--globe
+	> .icon.--nav
+		color #FFFFFF
+	
+	> .icon.--globe
+	> .icon.--nav
+		font-size 2rem
+		
+	> .brand::before 
+		font-size 2.5rem
+		
+		
+		
+@keyframes fade
+	0% 
+		opacity .0
+	10% 
+		opacity .1
+	20% 
+		opacity .2
+	30% 
+		opacity .3
+	40% 
+		opacity .4
+	50% 
+		opacity .5
+	60% 
+		opacity .6
+	70% 
+		opacity .7
+	80% 
+		opacity .8
+	90% 
+		opacity .9
+	100% 
+		opacity 1
+	
