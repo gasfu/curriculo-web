@@ -4,10 +4,7 @@ import { Link } from 'react-router'
 class Auth extends React.Component {
 	constructor() {
 		super();
-		this.state = {errors: {
-			email: null,
-			password: null
-		}};
+		this.state = {error: "alert --error"};
 	}
 
 	render() {
@@ -16,11 +13,11 @@ class Auth extends React.Component {
 				<form method='POST' name='authForm' className='form --inverse'>
 					<h1 className="brand --inverse"></h1>
 					
-					<div className="alert --error">Ops! Seu email ou a senha está errada.</div>
+					<div className={this.state.error} >Ops! Seu email ou a senha está errada.</div>
 
 					<div className='input-group'>
 						<label className='label'>Email</label>
-						<input name='email' className='input' />
+						<input name='email' className='input' required="required" />
 					</div>
 					<div className='input-group'>
 						<label className='label'>Senha</label>

@@ -5,7 +5,7 @@
 		
 		> .label	
 			color #FFFFFF
-			
+
 		> .input
 			width 100%
 			padding 14px 0px
@@ -25,6 +25,14 @@
 	color #FFFFFF
 		
 	&.--open
-		display block		
+		display block	
+		
+	&.--error
+		@extend .icon, .icon.--error::before
+		&:before 
+			margin-right 15px
+		
+		
+
 	
 			

@@ -1,0 +1,26 @@
+@font-face 
+  font-family 'iconsFeedback'
+  src url('/assets/fonts/feedback/fontello.eot?78914200')
+  src url('/assets/fonts/feedback/fontello.eot?78914200#iefix') format('embedded-opentype'),
+      url('/assets/fonts/feedback/fontello.woff2?78914200') format('woff2'),
+      url('/assets/fonts/feedback/fontello.woff?78914200') format('woff'),
+      url('/assets/fonts/feedback/fontello.ttf?78914200') format('truetype'),
+      url('/assets/fonts/feedback/fontello.svg?78914200#fontello') format('svg')
+  font-weight normal
+  font-style normal
+
+
+.icon
+	font-family "iconsFeedback"
+	font-style normal
+	font-weight normal
+	font-size 1rem
+	
+	&.--error::before
+		content '\e803'
+		
+	&.--success::before
+		content '\e804'
+	
+	&.--info::before
+		content '\e800'
